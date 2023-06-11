@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    {{!-- <link rel="stylesheet" href="/css/feed.css"> --}}
+    <link rel="stylesheet" href="/css/profile.css">
+
+
+<body>
+    <!-- header starts -->
+    <header>
+        <div class="header">
+            <div class="header__left">
+                <img class="imglogo" src="/images/logo2.png" alt="logo" />
+            </div>
+
+            <div class="header__middle">
+                <div class="header__option">
+                    <a href="/"><i class="fa-solid fa-house"> Home</i></a>
+                </div>
+                <div class="header__option active">
+                    <a href="/feed"><i class="fa-solid fa-newspaper"> Feed </i></a>
+                </div>
+                <div class="header__option">
+                    <i class="fa-solid fa-bell"> Notification </i>
+                </div>
+                <div class="header__input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="What are you looking for ?" />
+                </div>
+
+            </div>
+
+            <div class="header__right">
+                <div class="header__info">
+                    <div class="useravatar">
+                        <img class="user__avatar" src="/uploads/{{user.profileImg}}" alt="" />
+                        {{!-- <h4>Somanath Goudar</h4> --}}
+                    </div>
+                    <div class="dropdown">
+                        <form action="/auth/logout" method="post">
+                            <button type="submit" class="logout"><i class="fa-solid fa-right-from-bracket"> Log
+                                    out</i></button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- main body starts -->
+    <div class="main__body">
+        <!-- sidebar starts -->
+        <div class="sidebar">
+            <div class="sidebarRow">
+                <img class="user__avatar" src="/uploads/{{user.profileImg}}" alt="" />
+                {{#if user}}
+                <h4>{{user.firstName}} <br>{{user.lastName}}</h4>
+            </div>
+            {{else}}
+            Connectez-vous !
+            {{/if}}
+
+        </div>
+
+        <section class="" style="background-color: #fcaeae;">
+            <div class="container py-5 h-100">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="avatar-ctn">
+                                <img src="" alt="">
+                                <img src="/uploads/{{this.postImg}}" class="avatar" alt="">
+                            </div>
+                            <div class="card-body ">
+                                <h5 class="card-title">Jeny Toons</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                                    similique nisi nobis corrupti eligendi fugiat expedita, repellat veritatis,
+                                    voluptatem obcaecati corporis quas neque eos tempora suscipit commodi. Quaerat,
+                                    repudiandae voluptatibus</p>
+                                <a href="#" class="btn btn-primary">Jeny@email.com </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Profile Page
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Hey Jeny welcome back</h5>
+                                <p class="card-text">This is your profile page where you can add all information about
+                                    yourself</p>
+                                <a href="#" class="btn btn-primary"> Go Somewhere</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Groupomania - Network
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    </div>
+    </section>
+
+</body>
+
+</html>

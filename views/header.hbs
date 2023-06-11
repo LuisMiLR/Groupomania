@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Groupomania</title>
+</head>
+
+<body>
+    <!-- header starts -->
+
+    <div class="header">
+        <div class="header__left">
+            <img class="imglogo" src="/images/logo2.png" alt="logo" />
+        </div>
+
+        <div class="header__middle">
+            <div class="header__option active">
+                <a href="/"><i class="fa-solid fa-house"> Home</i></a>
+            </div>
+            <div class="header__option">
+                <a href="/feed"><i class="fa-solid fa-newspaper"> Feed </i></a>
+            </div>
+            <div class="header__option">
+                <i class="fa-solid fa-bell"> Notification </i>
+            </div>
+            <div class="header__input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="What are you looking for ?" />
+            </div>
+
+        </div>
+
+        <div class="header__right">
+            <div class="header__info">
+                <a href="/profile"></a><img class="user__avatar" src="/uploads/{{user.profileImg}}" alt="" />
+                {{!-- <h4>Somanath Goudar</h4> --}}
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-sharp fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <div class="bttn">
+                        <a href="/register"><i class="fa-solid fa-user-plus"> Register</i></a>
+                    </div>
+                    <div class="bttn_active">
+                        <a href="/"><i class="fa-solid fa-right-to-bracket"> Login</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

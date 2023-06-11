@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: lightgray;
+}
+
+.header__left img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 23rem;
+    height: 23rem;
+}
+
+/* .imglogo{
+    
+    width: 9rem;
+    height: 10rem;
+} */
+
+
+.user__avatar {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.header {
+    padding: 15px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    max-height: 7rem !important;
+    overflow: hidden;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 59px;
+    border-radius: 999px;
+}
+
+.header__input input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header__middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.header__option .fa-solid {
+    font-size: 18px;
+    color: #000;
+}
+
+.header__option:hover .fa-solid {
+    color: #2e81f4;
+}
+
+
+
+.header__option {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.header__option.active {
+    border-bottom: 4px solid #FD2D01;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* .header__option.active .material-icons {
+  color: #FD2D01;
+}
+
+
+ .header__option.active {
+  border-bottom: 4px solid #FD2D01;
+} 
+
+
+.dropdown-content .bttn_active {
+  border-bottom: 4px solid #FD2D01;
+  color: #FD2D01;
+}
+
+.header__option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info h4 {
+    margin-left: 10px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    width: 14rem;
+}
+
+.header__right .fa-solid {
+    color: #000;
+    margin: 0 10px;
+}
+
+.header__right .fa-solid:hover {
+    cursor: pointer;
+}
+
+/* sidebar  */
+
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebarRow:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.sidebarRow h4 {
+    margin-left: 20px;
+    font-weight: 600;
+}

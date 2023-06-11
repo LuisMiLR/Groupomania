@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header__left img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 23rem;
+    height: 23rem;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+
+.user__avatar {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.header {
+    padding: 15px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    max-height: 7rem !important;
+    overflow: hidden;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 59px;
+    border-radius: 999px;
+}
+
+.header__input input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header__middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.header__option .fa-solid {
+    font-size: 18px;
+    color: #000;
+}
+
+.header__option:hover .fa-solid {
+    color: #2e81f4;
+}
+
+
+
+.header__option {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.header__option.active .material-icons {
+  color: #FD2D01;
+}
+
+
+
+.header__option.active {
+  border-bottom: 4px solid #FD2D01;
+}
+
+.header__option.active .material-icons {
+  color: #FD2D01;
+}
+
+
+.header__option.active {
+  border-bottom: 4px solid #FD2D01;
+}
+
+
+.header__option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info h4 {
+    margin-left: 10px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    width: 14rem;
+}
+
+.header__right .fa-solid {
+    color: #000;
+    margin: 0 10px;
+}
+
+.header__right .fa-solid:hover {
+    cursor: pointer;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+/* sidebar  */
+
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebarRow:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.sidebarRow h4 {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+
+
+
+.main__body {
+    display: flex;
+}
+
+body {
+  background-color: lightgray;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .header__input input {
+    display: none;
+  }
+
+  .header__middle {
+    display: none;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .widgets {
+    display: none;
+  }
+
+  .feed {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  
+}
+
+@media (min-width: 320px) {
+  .storyReel {
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  /* CSS To Target 767 px width of screen */
+
+.feed {
+    width: 50%;
+    padding: 10px 50px;
+}
+}
+
+
+.dropbtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: #000;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ffffff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff;}
+
+
+a {
+  color: #FD2D01;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.fa-solid, .fas {
+  font-weight: 900;
+  color: #FD2D01;
+}
+
+
+.bg-image {
+  background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+  background-repeat: repeat  ;
+  background-size: cover;
+}
+
+
+.btn-block {
+  display: block;
+  width: 100%;
+  background-color: #FFD7D7;
+  border: #FFD7D7;
+  color: black;
+  font-weight: 600;
+  box-shadow: 3px 3px #C4C4C4;
+}
+
+
