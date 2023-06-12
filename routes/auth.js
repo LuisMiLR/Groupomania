@@ -27,7 +27,7 @@ router.post('/logout', authCtrl.logout);
 
 router.post('/message', upload.single('avatar'), messageCtrl.post);
 
-router.post('/postComment', upload.single('avatar'), messageCtrl.postComment);
+router.post('/Comment', upload.single('avatar'), messageCtrl.Comment);
 
 router.post('/profile', authCtrl.isLoggedIn);
 

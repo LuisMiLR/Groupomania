@@ -19,30 +19,30 @@ exports.register = async (req, res) => {
 // Permet de vérifier si les champs sont vides ou pas 
 
     if ( ! lastname  || !firstname|| !email || !password || !passwordConfirm ) {
-        return res.render('register', { message: 'Please fill all the fields to valid your inscription !' });
+        return res.render('register', { messages: 'Please fill all the fields to valid your inscription !' });
     }
 
     if(password !== passwordConfirm ) {
-        return res.render('register', { message : 'the password does not match, try again'})
+        return res.render('register', { messages : 'the password does not match, try again'})
     }
 
     // Validation de l'e-mail et du mot de passe
     if (!emailRegex.test(email)) {
-        return res.render('register', { message: 'Veuillez entrer une adresse e-mail valide.' });
+        return res.render('register', { messages: 'Veuillez entrer une adresse e-mail valide.' });
     }
 
     if (!passwordRegex.test(password)) {
-        return res.render('register', { message: 'Le mot de passe doit contenir au moins 8 caractères, une lettre minuscule, une lettre majuscule, un chiffre et un caractère spécial.' });
+        return res.render('register', { messages: 'Le mot de passe doit contenir au moins 8 caractères, une lettre minuscule, une lettre majuscule, un chiffre et un caractère spécial.' });
     }
 
     // Connexion à la base de donnée :
     db.query('SELECT email FROM users WHERE email = ?', [email], async(error, results) => {
         if(error) {
             console.log(error);
-            return res.render('register', { message: "An error occurred"  });
+            return res.render('register', { messages: "An error occurred"  });
     
         } if(results.length > 0 || !results) {
-            return res.render('register', { message : 'This email is already taken'});
+            return res.render('register', { messages : 'This email is already taken'});
 
         }
 
@@ -53,7 +53,7 @@ exports.register = async (req, res) => {
     db.query('INSERT INTO users SET ?', { lastName: lastname , firstName : firstname , email : email , password: hashedPassword }, (error) => {
         if(error) {
             console.log(error);
-            return res.render('register', { message : "An error occurred"  });
+            return res.render('register', { messages : "An error occurred"  });
         }else {
             return res.render('register', { message : 'You are now registered, please log in'})
         }
@@ -68,20 +68,25 @@ exports.login = async (req, res) => {
     // Step 1 Récuperer l'email et le password de l'utilisateur depuis le formulaire
     const { email, password } = req.body;
 
+    // Partie Regex
+
+
     // Step 2 Error Handling avant Db !
     // Permet de vérifier si les champs sont vides ou pas
     if (!email || !password) {
-    return res.render('login', { message: 'Please provide email and password!' });
+    return res.render('login', { messages: 'Please provide email and password!' });
     }
+
+    
 
     // Step 3 Call De la Db ET error Handling !
     db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
     console.log(results);
     if (error) {
         console.log(error);
-        return res.render('login', { message: 'Failed to login' });
+        return res.render('login', { messages: 'Failed to login' });
     }else if (!results || results.length === 0) {
-        return res.render('login', { message: 'Invalid email or password' });
+        return res.render('login', { messages: 'Invalid email or password' });
     } else {
         // Step 4 Verification du match du password user et du hash ! + Error Handling !
         const match = await bcrypt.compare(password, results[0].password);

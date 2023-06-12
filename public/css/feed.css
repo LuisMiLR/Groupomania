@@ -14,7 +14,20 @@
   border-radius: 50%;
   width: 4rem;
 }
-
+.alert {
+  position: absolute;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  border-radius: .25rem;
+  right: 40%;
+  width: 30%;
+  text-align: center;
+}
 
 .header {
     padding: 15px 20px;
@@ -114,7 +127,6 @@
 }
 
 .header__right .fa-solid {
-    background-color: #FD2D01;
     color: #fff;
     margin: 0 10px;
     border: none;
@@ -476,3 +488,36 @@ h5 {
 .h3, h3 {
   font-size: 1rem;
 }
+
+
+.alltogether {
+  display: flex;
+  gap: 21px;
+  justify-content: center;
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 10rem;
+    height: 4.5rem;
+}
+
+
+.btn-primary {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  border: none;
+}
+
+

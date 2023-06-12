@@ -9,13 +9,6 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 });
 
-// const db = mysql.createConnection({
-//     host: "localhost",  
-//     user: "root",
-//     password: "",
-//     database: "groupomania"
-// });
-
 
 db.connect((error) => {
     if (error) {
@@ -26,4 +19,4 @@ db.connect((error) => {
 });
 
 
-module.exports = db;
+module.exports = db

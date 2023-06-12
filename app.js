@@ -1,5 +1,6 @@
 const express = require('express');
 // afficher messages à nos users
+const handlebarsHelpers = require('handlebars-helpers');
 const flash = require ('connect-flash');
 const session = require ('express-session');
 const path = require('path');
@@ -37,6 +38,15 @@ const footer = fs.readFileSync('./views/footer.hbs', 'utf8');
 
 hbs.registerPartial('header', header);
 hbs.registerPartial('footer', footer);
+
+handlebarsHelpers({ handlebars: hbs.handlebars });
+hbs.registerHelper('ifCond', function(v1,v2,options){
+  if(v1 == v2){
+    return options.fn(this);
+  }else{
+    return options.inverse(this)
+  }
+});
 
 // Definir routes
 
