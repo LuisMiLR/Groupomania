@@ -152,9 +152,9 @@
 
 
 
-.main__body {
+/*.main__body {
     display: flex;
-}
+}*/
 
 body {
     background-color: lightgray;
@@ -217,13 +217,17 @@ body {
 
 
 .avatar-ctn {
-background-color: orange;
+background-color: #f0abab;
 text-align : center
 }
 
 
 .card- {
 width: 100%;
+}
+
+.card {
+    box-shadow: 0px 5px 7px -7px
 }
 
 .avatar {
