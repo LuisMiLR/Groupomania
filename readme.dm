@@ -1,21 +1,36 @@
-# Groupomania 🖥
+<h4 align="left"> Groupomania :iphone :</h4>
+
 
 Création d'un reseau social L'objectif est de construire **From Scratch** un réseau social d'entreprise.
 
 
-#  Technologies utilisées
+
+
+<h4 align="left"> 💻 Technologies utilisées:</h4>
+
+![HTML](https://img.shields.io/badge/HTML-%23FFac45.svg?&style=for-the-badge&logo=html5&logoColor=white&color=orange)
+![CSS](https://img.shields.io/badge/CSS-%23FFac45.svg?&style=for-the-badge&logo=css3&logoColor=white&color=blue)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-%23FFac45.svg?&style=for-the-badge&logo=javascript&logoColor=white&color=yellow)
+![VSCODE](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![FIGMA](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![NODE](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![EXPRESS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+<hr/>
+
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
+<h4 align="left"> :lock: API Routes:</h4>
 
-## API Routes
 
 Toutes les routes doivent disposer d’une autorisation (le token est envoyé par le front-end avec l'en-tête d’autorisation : « Bearer »). Avant que l'utilisateur puisse apporter des utiliser les routes **put** et **delete**, le code doit vérifier si l'userId actuel correspond à l'userId du profil, du post ou du commentaire. Cela permet de s'assurer que seul le propriétaire du profil, des posts ou des commentaires peut apporter des modifications à celle-ci ou les supprimer.
 **L'administrateur** quant à lui, peut, supprimer n'importe quel commentaire, post ou profil.
 
-## Exigences de sécurité
+
+<h4 align="left"> :lock: Exigences de sécurité</h4>
 
 -   Le mot de passe de l'utilisateur doit être haché.
 -   L'authentification doit être renforcée sur toutes les routes requises.
@@ -25,7 +40,8 @@ Toutes les routes doivent disposer d’une autorisation (le token est envoyé pa
 -   Le contenu du dossier images et dotenv ne doit pas être téléchargé sur GitHub.
 
 
-# Installation
+
+<h4 align="left"> :minidisc: Installation </h4>
 
 **Backend :**
 - Télécharger *NodeJS*
