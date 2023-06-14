@@ -8,11 +8,13 @@ Création d'un reseau social L'objectif est de construire From Scratch un résea
 
 
 <br/>
+
 ![CSS](https://img.shields.io/badge/CSS-%23FFac45.svg?&style=for-the-badge&logo=css3&logoColor=white&color=blue)
 ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-%23FFac45.svg?&style=for-the-badge&logo=javascript&logoColor=white&color=yellow)
 ![NODE](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![EXPRESS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
 <br/>
 <h4 align="left"> :lock: API Routes:</h4>
 
@@ -37,12 +39,12 @@ L'administrateur quant à lui, peut, supprimer n'importe quel commentaire, post 
 ##Backend :
 - Télécharger *NodeJS*
 - Créer un fichier `.env` pour remplir les variables d'environnements
-- Se rendre dans le dossier `Backend`, installer Node et toute les dépendances avec `npm i`
-- Lancer le serveur avec `npm run dev`
+- installer Node et toute les dépendances avec `npm i`
+- Lancer le serveur avec `npm start`
 - Utiliser `Ctrl+C` pour stopper le serveur
 - Utilisation du `PORT = 3000`
 <br/>
 ##Frontend :
-- Ouvrir un nouveau terminal et se rendre dans le dossier `Frontend`
-- Lancer React avec la commande `npm start`
+- Ouvrir le navigateur et saisir l'URI localhost:3000
+
 <br/>
