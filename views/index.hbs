@@ -117,4 +117,16 @@
         </div>
     </section>
 
+    <script>
+    document.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition > 0) {
+        header.classList.add('fixed-navbar');
+      } else {
+        header.classList.remove('fixed-navbar');
+      }
+    });
+  </script>
     {{> footer}}
