@@ -44,7 +44,7 @@ L'administrateur quant à lui, peut, supprimer n'importe quel commentaire, post 
 - Utiliser `Ctrl+C` pour stopper le serveur
 - Utilisation du `PORT = 3000`
 <br/>
-<h4 align="left"> ##Frontend :</h4>
+<h4 align="left"> Frontend :</h4>
 
 - Ouvrir le navigateur et saisir l'URI localhost:3000
 
