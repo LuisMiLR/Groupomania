@@ -1,4 +1,4 @@
-<h4 align="left"> Groupomania :iphone:</h4>
+<h4 align="left"> Groupomania projet FullStack :iphone:</h4>
 
 <br/>
 Création d'un reseau social L'objectif est de construire From Scratch un réseau social d'entreprise.
