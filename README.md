@@ -19,18 +19,16 @@ Création d'un reseau social L'objectif est de construire From Scratch un résea
 <h4 align="left"> :lock: API Routes:</h4>
 
 <br/>
-Toutes les routes doivent disposer d’une autorisation (le token est envoyé par le front-end avec l'en-tête d’autorisation : « Bearer »). Avant que l'utilisateur puisse apporter des utiliser les routes **put** et **delete**, le code doit vérifier si l'userId actuel correspond à l'userId du profil, du post ou du commentaire. Cela permet de s'assurer que seul le propriétaire du profil, des posts ou des commentaires peut apporter des modifications à celle-ci ou les supprimer.
+Toutes les routes dispose d’une autorisation (le token est envoyé par le front-end avec l'en-tête d’autorisation : « Bearer »). Avant que l'utilisateur puisse apporter des utiliser les routes  **post** **put** et **delete**, le code vérifie si l'userId actuel correspond à l'userId du profil, du post ou du commentaire. Cela permet de s'assurer que seul le propriétaire du profil, des posts ou des commentaires peut apporter des modifications à celle-ci ou les supprimer.
 L'administrateur quant à lui, peut, supprimer n'importe quel commentaire, post ou profil.
 <br/>
 <br/>
 <h4 align="left"> :lock: Exigences de sécurité</h4>
 <br/>
--   Le mot de passe de l'utilisateur doit être haché.
--   L'authentification doit être renforcée sur toutes les routes requises.
+-   Le mot de passe de l'utilisateur est haché avec Bcrypt.
+-   L'authentification est renforcée sur toutes les routes requises.
 -   Les adresses électroniques dans la base de données sont uniques.
--   La sécurité de la base de données MySQL ne doit pas empêcher l'application de se lancer sur la machine d'un utilisateur.
--   Les versions les plus récentes des logiciels sont utilisées avec des correctifs de sécurité actualisés.
--   Le contenu du dossier images et dotenv ne doit pas être téléchargé sur GitHub.
+-   La sécurité de la base de données MySQL n'empêche pas l'application de se lancer sur la machine d'un utilisateur.
 <br/>
 
 <br/>
